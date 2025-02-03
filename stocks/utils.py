@@ -5,6 +5,10 @@ from django.http import JsonResponse
 from django.core.management.base import BaseCommand
 from .models import Stock
 
+'''
+Functions for setup and updating DB content.
+'''
+
 # Fetch S&P 500 stock data
 def fetch_sp500_data():
     sp500_tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"]
